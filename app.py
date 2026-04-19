@@ -401,7 +401,6 @@ def load_seismic_data():
     """Loads the massive CSV once into memory."""
     try:
         df = pd.read_pickle("waveform_compute.pkl")
-        df['pgv_array'] = df['pgv_array'].apply(ast.literal_eval)
         return df
     except FileNotFoundError:
         st.error("⚠️ waveform_compute.pkl not found! Make sure it's in the same folder.")
