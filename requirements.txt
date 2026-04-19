@@ -1,0 +1,11 @@
+streamlit
+pandas
+numpy
+scipy
+requests
+google-generativeai
+elevenlabs
+tensorflow-cpu
+scikit-learn
+joblib
+Pillow
