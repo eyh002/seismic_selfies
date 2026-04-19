@@ -5,7 +5,7 @@ scipy
 requests
 google-generativeai
 elevenlabs
-tensorflow==2.18.0
+tensorflow-cpu==2.18.0
 scikit-learn
 joblib
 Pillow
