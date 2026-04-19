@@ -400,11 +400,11 @@ anomaly_model, anomaly_scaler, anomaly_threshold = load_anomaly_detector()
 def load_seismic_data():
     """Loads the massive CSV once into memory."""
     try:
-        df = pd.read_csv("waveform_compute.csv")
+        df = pd.read_csv("waveform_compute.pkl")
         df['pgv_array'] = df['pgv_array'].apply(ast.literal_eval)
         return df
     except FileNotFoundError:
-        st.error("⚠️ waveform_compute.csv not found! Make sure it's in the same folder.")
+        st.error("⚠️ waveform_compute.pkl not found! Make sure it's in the same folder.")
         st.stop()
 
 seismic_df = load_seismic_data()
